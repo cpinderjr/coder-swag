@@ -21,7 +21,7 @@ class DataService {
     private let hats = [
         Product(title: "Devslopes Logo Graphic Beanie", price: "$18", imageName: "hat01.png"),
         Product(title: "Devslopes Logo Hat Black", price: "$22", imageName: "hat02.png"),
-        Product(title: "Devslopes Logo Hat White", price: "$22", imageName: "hats03.png"),
+        Product(title: "Devslopes Logo Hat White", price: "$22", imageName: "hat03.png"),
         Product(title: "Devslopes Logo Snapback", price: "$20", imageName: "hat04.png")
     ]
     
@@ -33,11 +33,11 @@ class DataService {
     ]
     
     private let shirts = [
-        Product(title: "Devslopes Logo Shirt Black", price: "$18", imageName: "shirts01.png"),
-        Product(title: "Devslopes Badge Shirt Black", price: "$19", imageName: "shirts02.png"),
-        Product(title: "Devslopes Logo Shirt Red", price: "$18", imageName: "shirts03.png"),
-        Product(title: "Hustle Delegate Grey", price: "$18", imageName: "shirts04.png"),
-        Product(title: "Kickflip Studios Black", price: "$18", imageName: "shirts05.png")
+        Product(title: "Devslopes Logo Shirt Black", price: "$18", imageName: "shirt01.png"),
+        Product(title: "Devslopes Badge Shirt Black", price: "$19", imageName: "shirt02.png"),
+        Product(title: "Devslopes Logo Shirt Red", price: "$18", imageName: "shirt03.png"),
+        Product(title: "Hustle Delegate Grey", price: "$18", imageName: "shirt04.png"),
+        Product(title: "Kickflip Studios Black", price: "$18", imageName: "shirt05.png")
     ]
     
     // Needed for collection view when it is pointing to no products to prevent crashing.

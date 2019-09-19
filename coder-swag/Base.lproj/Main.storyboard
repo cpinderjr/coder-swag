@@ -80,23 +80,23 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="ZNW-JG-u66"/>
                     <connections>
                         <outlet property="categoryTable" destination="iCW-ti-AOc" id="fPk-WI-cpp"/>
-                        <segue destination="qvC-t6-F7v" kind="show" id="D7X-iA-PN3"/>
+                        <segue destination="qvC-t6-F7v" kind="show" identifier="ProductsVC" id="D7X-iA-PN3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1127" y="74"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="ZLF-xB-HK1">
             <objects>
-                <viewController id="qvC-t6-F7v" sceneMemberID="viewController">
+                <viewController id="qvC-t6-F7v" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a03-bn-UPl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg2-uM-gMf">
-                                <rect key="frame" x="16" y="16" width="89.5" height="24"/>
+                                <rect key="frame" x="16" y="16" width="359" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,7 +111,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4hs-rc-hl5" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="4hs-rc-hl5" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="276"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -171,9 +171,13 @@
                             <constraint firstItem="P0f-VP-kiw" firstAttribute="bottom" secondItem="4Tr-ge-yVd" secondAttribute="bottom" id="IRE-o4-Uew"/>
                             <constraint firstItem="4Tr-ge-yVd" firstAttribute="leading" secondItem="P0f-VP-kiw" secondAttribute="leading" id="WWb-UR-crJ"/>
                             <constraint firstItem="P0f-VP-kiw" firstAttribute="trailing" secondItem="4Tr-ge-yVd" secondAttribute="trailing" id="lDn-b7-dca"/>
+                            <constraint firstItem="P0f-VP-kiw" firstAttribute="trailing" secondItem="Qg2-uM-gMf" secondAttribute="trailing" id="ssS-yw-w86"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P0f-VP-kiw"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="4Tr-ge-yVd" id="ZKI-Jw-yFF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLf-ew-8IZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
